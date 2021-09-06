@@ -1,12 +1,14 @@
-The presented code in this repository is the implementation of PhysGNN.
-The code used for generating the datasets used in the paper is also included. 
+#PhysGNN
 
-The tumour and brain model are taken from the paper: "A machine learning approach for real-time modelling of tissue deformation 
+* The presented code in this repository is the implementation of PhysGNN.
+* The code used for generating the datasets used in the paper is also included. 
+
+* The tumour and brain model are taken from the paper: "A machine learning approach for real-time modelling of tissue deformation 
 in image-guided neurosurgery" by Tonutti et al, available at: 
 https://github.com/michetonu/MALTIDEM--Machine-Learning-for-Tissue-Deformation-Modelling
 
 
-**Data Generation**
+###**Data Generation**
 
 1) Please download: 
 
@@ -24,37 +26,36 @@ https://github.com/michetonu/MALTIDEM--Machine-Learning-for-Tissue-Deformation-M
     3) `pip install networkx`
 
 3) Please run `data_generator_1.m` to generate Dataset 1, and `data_generator_1.m` to generate Dataset 2.
-
+    1) Please save the formatted data in two folders: dataset_1 and dataset_2.
 4) Run `dataset_full.py` to generate the preprocessed data. 
-
 5) Run `pg_dataset.py` to create 1/11 of dataset1/dataset2 and pickle them. Each run requires 22GB of RAM. 
 Dataset 1 and Dataset 2 use up 16.79 GB of RAM each. 
 
-**PhysGNN Training**
+###**PhysGNN Training**
 
 1) Select the desired configuration from training in `main.py` and simply run the code. 
 
-**Reproducing Results**
+###**Reproducing Results**
 1) Select the desired configuration from `reproduce.py` and simply run the code. 
 
+##**To run the code on Colab
 
-**To run the code on Colab A Google Colab Pro is required.** 
+(**Requirement**: A Google Colab Pro Account) 
 
-**Training PhysGNN on Colab**
-1) Upload formatted_data_1 and formatted_data_2 to your Google Drive.
-2) Rename the folders formatted_data_1 and formatted_data_2 to dataset_1 and dataset_2 respectively. 
-3) Upload `Dataset_Generation.ipynb` to your Google Drive. 
-4) Set up the paths on your Colab notebook. 
-5) Run all the cells consecutively. Ensure proper selection of the dataset to be configured as a pytorch 
+###**Training PhysGNN on Colab**
+1) Upload dataset_1 and dataset_2 folders to your Google Drive.
+2) Upload `Dataset_Generation.ipynb` to your Google Drive. 
+3) Set up the paths on your Colab notebook. 
+4) Run all the cells consecutively. Ensure proper selection of the dataset to be configured as a pytorch 
 geometric dataset and its corresponding pickle name. 
-6) After one pytorch geometric dataset is created, restart the runtime to clear the RAM. 
-7) Each section of Dataset 1 and Dataset 2 takes 1 hour and 15 minutes to be generated. 
-8) After successful generation of the datasets, upload `PhysGNN.ipynb` on your Google Drive. 
-9) Run all the cells in a consecutive order. 
+5) After one pytorch geometric dataset is created, restart the runtime to clear the RAM. 
+6) Each section of Dataset 1 and Dataset 2 takes 1 hour and 15 minutes to be generated. 
+7) After successful generation of the datasets, upload `PhysGNN.ipynb` to your Google Drive. 
+8) Run all the cells in a consecutive order. 
     1) In the cell "Final Run for Training" select the dataset you wish to use
     2) In the "Final Run" section select the configuration you want to train.
 
-**To reproduce the results on Colab**
+###**To reproduce the results on Colab**
 1) Run all the cells until "Final Run for Training". Run the "Reproducing the Results" cell instead. 
 2) Select the Dataset and the model you wish to reproduce their results in the "Final Run" under the Reproducibility 
 cell. 
