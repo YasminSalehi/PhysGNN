@@ -24,37 +24,37 @@ def dataset_1(node_idx):
 
     if node_idx == 1:
         force_dir_filename = input_path + 'force_dir_a.csv'
-        formatted_data_path = 'formatted_data_10/a/'
+        formatted_data_path = 'dataset_1/a/'
     elif node_idx == 2:
         force_dir_filename = input_path + 'force_dir_b.csv'
-        formatted_data_path = 'formatted_data_10/b/'
+        formatted_data_path = 'dataset_1/b/'
     elif node_idx == 3:
         force_dir_filename = input_path + 'force_dir_c.csv'
-        formatted_data_path = 'formatted_data_10/c/'
+        formatted_data_path = 'dataset_1/c/'
     elif node_idx == 4:
         force_dir_filename = input_path + 'force_dir_d.csv'
-        formatted_data_path = 'formatted_data_10/d/'
+        formatted_data_path = 'dataset_1/d/'
     elif node_idx == 5:
         force_dir_filename = input_path + 'force_dir_e.csv'
-        formatted_data_path = 'formatted_data_10/e/'
+        formatted_data_path = 'dataset_1/e/'
     elif node_idx == 6:
         force_dir_filename = input_path + 'force_dir_f.csv'
-        formatted_data_path = 'formatted_data_10/f/'
+        formatted_data_path = 'dataset_1/f/'
     elif node_idx == 7:
         force_dir_filename = input_path + 'force_dir_g.csv'
-        formatted_data_path = 'formatted_data_10/g/'
+        formatted_data_path = 'dataset_1/g/'
     elif node_idx == 8:
         force_dir_filename = input_path + 'force_dir_h.csv'
-        formatted_data_path = 'formatted_data_10/h/'
+        formatted_data_path = 'dataset_1/h/'
     elif node_idx == 9:
         force_dir_filename = input_path + 'force_dir_i.csv'
-        formatted_data_path = 'formatted_data_10/i/'
+        formatted_data_path = 'dataset_1/i/'
     elif node_idx == 10:
         force_dir_filename = input_path + 'force_dir_j.csv'
-        formatted_data_path = 'formatted_data_10/j/'
+        formatted_data_path = 'dataset_1/j/'
     elif node_idx == 11:
         force_dir_filename = input_path + 'force_dir_k.csv'
-        formatted_data_path = 'formatted_data_10/k/'
+        formatted_data_path = 'dataset_1/k/'
     else:
         raise ValueError('Dataset for offsets above 11 do not exist.')
 

@@ -25,67 +25,67 @@ def dataset_2(idx):
     f_magnitude = 20  # units: Newtons
 
     if idx == 1:
-        formatted_data_path = 'formatted_data_2/a/'
+        formatted_data_path = 'dataset_2/a/'
         filename_force_dir_x = input_path + 'force_dir_x_a.csv'
         filename_force_dir_y = input_path + 'force_dir_y_a.csv'
         filename_force_dir_z = input_path + 'force_dir_z_a.csv'
         offset_output = 0
     elif idx == 2:
-        formatted_data_path = 'formatted_data_2/b/'
+        formatted_data_path = 'dataset_2/b/'
         filename_force_dir_x = input_path + 'force_dir_x_b.csv'
         filename_force_dir_y = input_path + 'force_dir_y_b.csv'
         filename_force_dir_z = input_path + 'force_dir_z_b.csv'
         offset_output = 15
     elif idx == 3:
-        formatted_data_path = 'formatted_data_2/c/'
+        formatted_data_path = 'dataset_2/c/'
         filename_force_dir_x = input_path + 'force_dir_x_c.csv'
         filename_force_dir_y = input_path + 'force_dir_y_c.csv'
         filename_force_dir_z = input_path + 'force_dir_z_c.csv'
         offset_output = 30
     elif idx == 4:
-        formatted_data_path = 'formatted_data_2/d/'
+        formatted_data_path = 'dataset_2/d/'
         filename_force_dir_x = input_path + 'force_dir_x_d.csv'
         filename_force_dir_y = input_path + 'force_dir_y_d.csv'
         filename_force_dir_z = input_path + 'force_dir_z_d.csv'
         offset_output = 45
     elif idx == 5:
-        formatted_data_path = 'formatted_data_2/e/'
+        formatted_data_path = 'dataset_2/e/'
         filename_force_dir_x = input_path + 'force_dir_x_e.csv'
         filename_force_dir_y = input_path + 'force_dir_y_e.csv'
         filename_force_dir_z = input_path + 'force_dir_z_e.csv'
         offset_output = 60
     elif idx == 6:
-        formatted_data_path = 'formatted_data_2/f/'
+        formatted_data_path = 'dataset_2/f/'
         filename_force_dir_x = input_path + 'force_dir_x_f.csv'
         filename_force_dir_y = input_path + 'force_dir_y_f.csv'
         filename_force_dir_z = input_path + 'force_dir_z_f.csv'
         offset_output = 75
     elif idx == 7:
-        formatted_data_path = 'formatted_data_2/g/'
+        formatted_data_path = 'dataset_2/g/'
         filename_force_dir_x = input_path + 'force_dir_x_g.csv'
         filename_force_dir_y = input_path + 'force_dir_y_g.csv'
         filename_force_dir_z = input_path + 'force_dir_z_g.csv'
         offset_output = 90
     elif idx == 8:
-        formatted_data_path = 'formatted_data_2/h/'
+        formatted_data_path = 'dataset_2/h/'
         filename_force_dir_x = input_path + 'force_dir_x_h.csv'
         filename_force_dir_y = input_path + 'force_dir_y_h.csv'
         filename_force_dir_z = input_path + 'force_dir_z_h.csv'
         offset_output = 105
     elif idx == 9:
-        formatted_data_path = 'formatted_data_2/i/'
+        formatted_data_path = 'dataset_2/i/'
         filename_force_dir_x = input_path + 'force_dir_x_i.csv'
         filename_force_dir_y = input_path + 'force_dir_y_i.csv'
         filename_force_dir_z = input_path + 'force_dir_z_i.csv'
         offset_output = 120
     elif idx == 10:
-        formatted_data_path = 'formatted_data_2/j/'
+        formatted_data_path = 'dataset_2/j/'
         filename_force_dir_x = input_path + 'force_dir_x_j.csv'
         filename_force_dir_y = input_path + 'force_dir_y_j.csv'
         filename_force_dir_z = input_path + 'force_dir_z_j.csv'
         offset_output = 135
     elif idx == 11:
-        formatted_data_path = 'formatted_data_2/h/'
+        formatted_data_path = 'dataset_2/h/'
         filename_force_dir_x = input_path + 'force_dir_x_k.csv'
         filename_force_dir_y = input_path + 'force_dir_y_k.csv'
         filename_force_dir_z = input_path + 'force_dir_z_k.csv'
