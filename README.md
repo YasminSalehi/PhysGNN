@@ -7,6 +7,9 @@
 in image-guided neurosurgery" by Tonutti et al, available at: 
 https://github.com/michetonu/MALTIDEM--Machine-Learning-for-Tissue-Deformation-Modelling
 
+* The `Graph_load_batch` function in `pg_dataset.py` has been adapted from the `Graph_load_batch` function in 
+`dataset.py` of Position-aware Graph Neural Networks code by You et al. available at:
+https://github.com/JiaxuanYou/P-GNN
 
 ###**Data Generation**
 
@@ -26,7 +29,7 @@ https://github.com/michetonu/MALTIDEM--Machine-Learning-for-Tissue-Deformation-M
     3) `pip install networkx`
 
 3) Please run `data_generator_1.m` to generate Dataset 1, and `data_generator_1.m` to generate Dataset 2.
-    1) Please save the formatted data in two folders: dataset_1 and dataset_2.
+Formatted data will be saved in dataset_1 and dataset_2 folders. 
 4) Run `dataset_full.py` to generate the preprocessed data. 
 5) Run `pg_dataset.py` to create 1/11 of dataset1/dataset2 and pickle them. Each run requires 22GB of RAM. 
 Dataset 1 and Dataset 2 use up 16.79 GB of RAM each. 
@@ -61,4 +64,4 @@ geometric dataset and its corresponding pickle name.
 cell. 
 3) Results generated from the pickled configurations can be saved by setting the `save` parameter to 1. 
 4) Setting `mean_mag_results` to 1 generates the mean Euclidean errors reported (Table 5). 
-5) Setting `max_error_results` to 1 generated the max error results reported (Table 6).
+5) Setting `max_error_results` to 1 generates the max error results reported (Table 6).
