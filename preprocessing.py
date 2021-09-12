@@ -73,7 +73,7 @@ def adj_matrix_format(A, filename):
 
 # --------------------------------------------------------------------------------------------------
 
-def adj_matrix_full_format(A, num_nodes, num_p_nodes, num_dir, t_steps, filename):
+def adj_matrix_full_format(A, num_nodes, num_dir, t_steps, filename):
     '''
 
     :param A: an adjacency matrix
@@ -88,7 +88,7 @@ def adj_matrix_full_format(A, num_nodes, num_p_nodes, num_dir, t_steps, filename
     with open(filename, 'w', newline='') as csvfile:
         writer = csv.writer(csvfile, delimiter=',')
 
-        for k in range(num_p_nodes*num_dir*t_steps):
+        for k in range(num_dir*t_steps):
 
             for i in range(num_rows):
 
