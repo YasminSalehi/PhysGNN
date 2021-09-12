@@ -80,8 +80,8 @@ def dataset_1(node_idx):
 
     # Creating the adjacency matrix
 
-    # A = adj_matrix_builder(elements_filename, num_nodes)
-    # adj_matrix_full_format(A, num_nodes, num_p_nodes, num_dirs, t_steps, adj_matrix_filename)
+    A = adj_matrix_builder(elements_filename, num_nodes)
+    adj_matrix_full_format(A, num_nodes, num_dirs, t_steps, adj_matrix_filename)
 
     ###################################################################################################################
 
