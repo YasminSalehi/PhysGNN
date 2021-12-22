@@ -1,4 +1,4 @@
-#PhysGNN
+# PhysGNN
 
 * The presented code in this repository is the implementation of PhysGNN.
 * The code used for generating the datasets used in the paper is also included. 
@@ -11,7 +11,7 @@ https://github.com/michetonu/MALTIDEM--Machine-Learning-for-Tissue-Deformation-M
 `dataset.py` of Position-aware Graph Neural Networks code by You et al. available at:
 https://github.com/JiaxuanYou/P-GNN
 
-###**Data Generation**
+## Data Generation
 
 1) Please download: 
 
@@ -34,18 +34,18 @@ Formatted data will be saved in dataset_1 and dataset_2 folders.
 5) Run `pg_dataset.py` to create 1/11 of dataset1/dataset2 and pickle them. Each run requires 22GB of RAM. 
 Dataset 1 and Dataset 2 use up 16.79 GB of RAM each. 
 
-###**PhysGNN Training**
+## PhysGNN Training
 
 1) Select the desired configuration from training in `main.py` and simply run the code. 
 
-###**Reproducing Results**
+## Reproducing Results
 1) Select the desired configuration from `reproduce.py` and simply run the code. 
 
-##**To run the code on Colab
+## To run the code on Colab
 
 (**Requirement**: A Google Colab Pro Account) 
 
-###**Training PhysGNN on Colab**
+### Training PhysGNN on Colab
 1) Upload dataset_1 and dataset_2 folders to your Google Drive.
 2) Upload `Dataset_Generation.ipynb` to your Google Drive. 
 3) Set up the paths on your Colab notebook. 
@@ -58,7 +58,7 @@ geometric dataset and its corresponding pickle name.
     1) In the cell "Final Run for Training" select the dataset you wish to use
     2) In the "Final Run" section select the configuration you want to train.
 
-###**To reproduce the results on Colab**
+### To reproduce the results on Colab 
 1) Run all the cells until "Final Run for Training". Run the "Reproducing the Results" cell instead. 
 2) Select the Dataset and the model you wish to reproduce their results in the "Final Run" under the Reproducibility 
 cell. 
