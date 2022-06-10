@@ -1,6 +1,8 @@
 # PhysGNN
 
-* The presented code in this repository is the implementation of PhysGNN.
+* The presented code in this repository is the implementation of PhysGNN, available at: 
+https://arxiv.org/pdf/2109.04352.pdf
+
 * The code used for generating the datasets used in the paper is also included. 
 
 * The tumour and brain model are taken from the paper: "A machine learning approach for real-time modelling of tissue deformation 
@@ -28,7 +30,7 @@ https://github.com/JiaxuanYou/P-GNN
     2) `pip install tensorboardX`
     3) `pip install networkx`
 
-3) Please run `data_generator_1.m` to generate Dataset 1, and `data_generator_1.m` to generate Dataset 2.
+3) Please run `data_generator_1.m` to generate Dataset 1, and `data_generator_2.m` to generate Dataset 2.
 Formatted data will be saved in dataset_1 and dataset_2 folders. 
 4) Run `dataset_full.py` to generate the preprocessed data. 
 5) Run `pg_dataset.py` to create 1/11 of dataset1/dataset2 and pickle them. Each run requires 22GB of RAM. 
