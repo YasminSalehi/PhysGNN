@@ -3,6 +3,15 @@
 * The presented code in this repository is the implementation of PhysGNN, available at: 
 https://arxiv.org/pdf/2109.04352.pdf
 
+* Please cite as: 
+
+`@article{salehi2021physgnn,
+  title={PhysGNN: A Physics-Driven Graph Neural Network Based Model for Predicting Soft Tissue Deformation in Image-Guided Neurosurgery},
+  author={Salehi, Yasmin and Giannacopoulos, Dennis},
+  journal={arXiv preprint arXiv:2109.04352}, 
+  year={2021}
+}`
+
 * The code used for generating the datasets used in the paper is also included. 
 
 * The tumour and brain model are taken from the paper: "A machine learning approach for real-time modelling of tissue deformation 
