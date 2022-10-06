@@ -37,7 +37,7 @@ https://github.com/JiaxuanYou/P-GNN
     and place all the downloaded files in the "code" folder. 
     
 2) Please make the following installations:
-    1) `pip install torch-scatter torch-sparse torch-cluster torch-spline-conv torch-geometric -f https://pytorch-geometric.com/whl/torch-1.9.0+cu102.html`
+    1) `pip install torch-scatter torch-sparse torch-cluster torch-spline-conv torch-geometric -f https://data.pyg.org/whl/torch-1.12.0+cu113.html`
     2) `pip install tensorboardX`
     3) `pip install networkx`
 
@@ -76,5 +76,5 @@ geometric dataset and its corresponding pickle name.
 2) Select the Dataset and the model you wish to reproduce their results in the "Final Run" under the Reproducibility 
 cell. 
 3) Results generated from the pickled configurations can be saved by setting the `save` parameter to 1. 
-4) Setting `mean_mag_results` to 1 generates the mean Euclidean errors reported (Table 5). 
-5) Setting `max_error_results` to 1 generates the max error results reported (Table 6).
+4) Setting `mean_mag_results` to 1 generates the mean Euclidean errors reported (Table 4). 
+5) Setting `max_error_results` to 1 generates the max error results reported (Table 5).
