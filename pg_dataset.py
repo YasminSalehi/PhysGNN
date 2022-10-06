@@ -170,7 +170,7 @@ def nx_to_tg_data(graphs):
 # To create pytorch geometric dataset, select the dataset_name,
 
 dataset_name = 'dataset_1'
-# dataset_name = 'dataset_2/'
+# dataset_name = 'dataset_2'
 
 path = dataset_name + '/a/' #
 # path = dataset_name + '/b/' #
