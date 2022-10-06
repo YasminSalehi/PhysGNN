@@ -118,10 +118,11 @@ def train(dataset, writer, dataset_name, config_selected):
             pred = model(batch)
             label = batch.y
             loss = model.loss(pred, label)
+            loss = loss / len(batch.y)
             loss.backward()
             opt.step()
-            total_loss += loss.item()  # MAE (l1 and l2 loss functions)
-            # total_loss += loss.item() * len(batch.y) # MSE
+            # total_loss += loss.item()  # is loss isn't being averaged
+            total_loss += loss.item() * len(batch.y)  # if loss is being averaged
             total_len += len(label)
 
         total_loss /= total_len  # train loss
@@ -130,7 +131,7 @@ def train(dataset, writer, dataset_name, config_selected):
         val_loss = val(validation_loader, model)
         learning_curve_train.append(total_loss)
         learning_curve_val.append(val_loss)
-        print("Epoch {}. Train Loss (l2): {:.16f}. Validation Loss (l2): {:.16f}".format(epoch, total_loss, val_loss))
+        print("Epoch {}. Train Loss: {:.16f}. Validation Loss: {:.16f}".format(epoch, total_loss, val_loss))
         # ------------------------------------------------------------------------------------------------------------------
         scheduler.step(val_loss)
         # ------------------------------------------------------------------------------------------------------------------
@@ -198,7 +199,7 @@ def train(dataset, writer, dataset_name, config_selected):
     lowest_val_loss = val(validation_loader, final_model)
     test_loss = test(test_loader, final_model)
 
-    print("Validation Loss (l2): {:.16f}. Test Loss (l2): {:.16f}".format(lowest_val_loss, test_loss))
+    print("Validation Loss: {:.16f}. Test Loss: {:.16f}".format(lowest_val_loss, test_loss))
     print('---------------')
     # ------------------------------------------------------------------------------------------------------------------
     for j in range(len(learning_curve_train)):
@@ -499,11 +500,11 @@ def reproduce(dataset, writer, config_selected, save, mean_mag_results, max_erro
         if save == 0:
             lowest_val_loss = val(validation_loader, final_model)
             test_mse = test(test_loader, final_model)
-            print("Validation Loss (l2): {:.16f} Test Loss (l2): {:.16f}".format(lowest_val_loss, test_mse))
+            print("Validation Loss: {:.16f} Test Loss: {:.16f}".format(lowest_val_loss, test_mse))
         else:
             lowest_val_loss, prediction_val, actual_val = val_reproduce(validation_loader, final_model)
             test_mse, prediction_test, actual_test = test_reproduce(test_loader, final_model)
-            print("Validation Loss (l2): {:.16f} Test Loss (l2): {:.16f}".format(lowest_val_loss, test_mse))
+            print("Validation Loss: {:.16f} Test Loss: {:.16f}".format(lowest_val_loss, test_mse))
 
             # -----------------------------------------------------------------------------------------------
             # Saving the results for further analysis
